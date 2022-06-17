@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 
 main {
   display: flex;
-  margin: auto;
+  margin: 30px auto;
   align-items: center;
   justify-content: space-between;
   padding: 50px 150px;
@@ -21,8 +22,15 @@ main {
 .learn {
   margin: auto;
   align-items: left;
-  width: 40%;
+  width: 30%;
   color: white;
+  /* margin-bottom: 20px; */
+  padding: 10px;
+  text-align: left;
+  }
+
+.learn p{
+  width: 440px;
 }
 input:focus {
   outline: 0;
@@ -44,7 +52,7 @@ input:focus {
   border-radius: 10px;
 }
 input {
-  width: 90%;
+  width: 100%;
   border-radius: 10px;
   border-color: hsl(246, 25%, 77%);
   padding: 10px;
@@ -73,18 +81,58 @@ span {
   color: hsl(0, 100%, 74%);
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width:900px) {
+  
+  body {
+    background-image: url(img/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+  }
   main {
     display: flex;
     flex-direction: column;
+    margin: 30px auto;
+    align-items: center;
+    /* justify-content: space-between;
+    padding: 50px 150px; */
   }
+  
+  .learn {
+    margin: 30px auto;
+    align-items: center;
+    color: white;
+    /* margin-bottom: 20px; */
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+  
+  }
+  
 }
 
-@media (max-width: 600px) {
-  .learn {
+@media screen and (max-width:375px) {
+ 
+  body {
+    background-image: url(img/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+  }
+  main {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    margin: 30px auto;
+    align-items: center;
+    /* justify-content: space-between;
+    padding: 50px 150px; */
+  }
+  
+  .learn {
+    margin: 30px auto;
+    align-items: left;
+    color: white;
+     /* margin-bottom: 20px; */
+  padding: 10px;
+  text-align: left;
+  display: inline-block;
+  
   }
 }
 /* # Front-end Style Guide

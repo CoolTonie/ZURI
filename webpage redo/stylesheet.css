@@ -1,0 +1,132 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(12, 11, 11);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 70px;
+  background-color: rgb(223, 184, 14);
+}
+
+.logo {
+  color: rgb(253, 250, 247);
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  background-color: rgb(121, 104, 8);
+  border-radius: 10px;
+  border-color: aliceblue;
+  border: 1px;
+  text-decoration: none;
+}
+
+span {
+  color: rgb(197, 178, 10);
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  background-color: rgb(216, 186, 51);
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.active {
+  background-color: #a09d10;
+}
+
+img {
+  width: 25%;
+  height: 300px;
+  position: relative;
+  bottom: 20px;
+  left: 37%;
+  border: o;
+  border-radius: 50px;
+  padding-top: 5px;
+}
+.intro {
+  color: aliceblue;
+  text-align: center;
+}
+.others {
+  display: flex;
+  color: aliceblue;
+  text-align: justify;
+  justify-content: center;
+  justify-content: space-evenly;
+  text-transform: capitalize;
+  width: 50%;
+  padding-left: 25%;
+}
+section .main h2 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  color: aliceblue;
+  width: 50%;
+  text-align: center;
+  text-align: justify;
+  text-transform: capitalize;
+  padding-left: 25%;
+  font-weight: 600;
+}
+button {
+  height: 50px;
+  border: 1px;
+  border-radius: 50px;
+  background-color: rgb(197, 178, 10);
+
+  width: 50%;
+  padding-left: 25%;
+}
+button a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: Georgia;
+  font-weight: bolder;
+  color: antiquewhite;
+  transition: 0.6s;
+}
+button a:hover {
+  color: black;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+/* section {
+  justify-content: space-around;
+  display: flex;
+  padding-left: 50%;
+  justify-content: center;
+} */

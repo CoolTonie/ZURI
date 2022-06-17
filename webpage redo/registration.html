@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TONIES WEBPAGE-REGISTRATION</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(12, 11, 11);
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 5px;
+        padding-left: 50px;
+        padding-right: 70px;
+        background-color: rgb(223, 184, 14);
+      }
+
+      .logo {
+        color: rgb(253, 250, 247);
+        font-size: 40px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-weight: bolder;
+        background-color: rgb(121, 104, 8);
+        border-radius: 10px;
+        border-color: aliceblue;
+        border: 1px;
+        text-decoration: none;
+      }
+
+      span {
+        color: rgb(197, 178, 10);
+      }
+
+      nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 25px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      nav ul li a:hover {
+        background-color: rgb(216, 186, 51);
+        transition: 0.5s;
+        border-radius: 5px;
+      }
+      .active {
+        background-color: #a09d10;
+      }
+      form{
+        color: aliceblue;
+        justify-content: center;
+        margin: 0, auto;
+
+      }
+input{
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+}
+
+select{
+  width: 100%;
+    border-radius: 30px;
+
+}
+label{
+  width: 200px;
+  font-size: large;
+  font-weight: 700;
+  color: rgb(197, 178, 10);
+
+}
+.submit{
+  width: 200px;
+margin: 30px auto;
+
+}
+.sumit{
+  width: 100%;
+}
+.container{
+  width:50%;
+  margin: auto;
+        color: rgb(228, 227, 220);
+  margin-top: 40px;
+  font-size: larger;
+  font-weight: 800;
+}
+.inputbox{
+display: flex;
+margin: 20px 0;
+}
+      footer {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <header>
+    <nav>
+      <h2>
+        <a href="index.html" target="_self" class="logo">N/<span>A</span></a>
+      </h2>
+
+      <ul>
+        <li><a href="index.html" target="_self">HOME</a></li>
+        <li>
+          <a class="active" href="registration.html" target="_self"
+            >REGISTRATION</a
+          >
+        </li>
+        <li>
+          <a href="login.html" target="_self">LOG IN</a>
+        </li>
+        <li><a href="contactme.html" target="_self">CONTACT ME</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <div class="container">
+        <div class="title">FILL IN THE FORM TO REGISTER WITH US:</div>
+        <form action="#">
+          <div class="input">
+          <div class="inputbox"><label for="fname">First name:</label>
+          <input
+            type="text"
+            id="name"
+            name="fname"
+            value=""
+            required
+></div>
+          <div class="inputbox"><label for="lname">Last name:</label>
+          <input
+            type="text"
+            id="name"
+            name="lname"
+            value=""
+            required
+></div>
+       <div class="inputbox">   <label for="phone number" id="" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+            >Phone number:</label
+ >
+          <input
+            type="tel"
+            id="phone"
+            name="phone number"
+            maxlength="11"
+            placeholder="123-4567-8910"
+            pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+            value=""
+            required
+          /></div>
+<div class="inputbox">          <label for="gender" class="gender">Gender:</label>
+                   <select form="gender" id="gender" name="gender" class="form-control">
+            <option value="male">MALE</option>
+            <option value="male">FEMALE</option>
+            <option value="male">NON-BINARY</option>
+          </select></div>
+          
+<div class="inputbox">          <label for="Country">Country:</label>
+          <input
+            type="text"
+            id="Country"
+            name="Country"
+            value=""
+            required
+          /></div>
+<div class="inputbox">          <label for="state/Province" class="state" id="state"
+            >State/Province:</label
+          >
+          <input
+            type="text"
+            id="state"
+            name="state/Province"
+            value=""
+            required
+          /></div>
+          <div class="inputbox"><label for="Email" id="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value=""
+            required
+          /></div>
+<div class="inputbox">          <label for="Password" id="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="Password"
+            value=""
+            required
+          /></div>
+<div class="inputbox">          <label for="c.Password" id="password">Confirm Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="c.Password"
+            value=""
+            required
+          /></div>
+           <div class="sumit"><input class="submit" type="submit" value="Submit" /></div>
+        </form>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <span
+      ><p>
+        This page was created and is managed by TONIE learning with I4GxZURI
+      </p></span
+    >
+  </footer>
+</html>

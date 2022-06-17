@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TONIES WEBPAGE-CONTACT ME</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      header {
+        overflow: hidden;
+        background-color: rgb(6, 105, 51);
+        font-weight: bolder;
+        /* position: sticky; */
+        top: 1;
+      }
+
+      .nav-item {
+        display: inline-flex;
+        justify-content: right;
+        width: 20%;
+        background-color: rgb(6, 105, 51);
+        background-size: 90%;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: rgb(250, 250, 250);
+        background-color: rgb(6, 105, 51);
+        border: 30px;
+        border-color: aliceblue;
+      }
+
+      .nav-item a:hover {
+        background-color: rgb(103, 216, 75);
+      }
+
+      body {
+        background-color: rgb(11, 105, 77);
+        padding: 100px, 30px, 50px, 20px;
+        margin: auto;
+      }
+
+      main {
+        width: 45%;
+        height: 70%;
+        margin: auto;
+        background-color: rgb(253, 255, 254);
+        border-radius: 50px;
+      }
+      .contactme-form {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: rgb(10, 9, 9);
+        display: inline;
+        justify-content: center;
+        margin-block: 100px;
+      }
+      #Name {
+        position: relative;
+        left: 50px;
+        bottom: 30px;
+      }
+      #Email {
+        position: relative;
+        left: 50px;
+        bottom: 30px;
+      }
+      #Message {
+        position: relative;
+        left: 70px;
+        bottom: 30px;
+        height: 150px;
+        width: 75%;
+      }
+      input {
+        padding: 1em;
+        width: 80%;
+        border: auto;
+        margin: auto;
+        border-radius: 30px;
+      }
+      .legend {
+        text-align: justify;
+        font-size: x-large;
+        font-style: normal;
+        position: relative;
+        left: 160px;
+        top: 10px;
+      }
+      .submit {
+        width: 30%;
+        padding: 0.5em;
+        border: auto;
+        margin: auto;
+        position: relative;
+        bottom: 60px;
+        left: 210px;
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+      }
+      footer {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: rgb(6, 87, 49);
+        position: relative;
+        text-align: center;
+        font-family: Franklin Gothic Medium;
+        margin: auto;
+        margin-top: 5em;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <header>
+    <nav>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" rel="noopener" target="_self"
+            >HOME</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="registration.html"
+            rel="noopener"
+            target="_blank"
+            >REGISTRATION</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" rel="noopener" target="_blank"
+            >LOG IN</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="contactme.html"
+            rel="noopener"
+            target="_self"
+            >CONTACT ME</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <h2 class="legend">LET'S GET IN TOUCH</h2>
+      <br />
+      <form class="contactme-form">
+        <label for="Name">Name:</label><br />
+        <input
+          type="text"
+          id="Name"
+          name="Name"
+          value=""
+          required
+        /><br /><br />
+        <label for="Email">Email:</label><br />
+        <input
+          type="email"
+          id="Email"
+          name="Email"
+          value=""
+          required
+        /><br /><br />
+        <label for="Message">Message:</label><br />
+        <input
+          type="text"
+          id="Message"
+          name="Message"
+          value=""
+          required
+        /><br /><br /><br />
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+  <footer>
+    <p>This page was created and is managed by TONIE learning with I4GxZURI</p>
+  </footer>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TONIES WEBPAGE-LOGIN</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      header {
+        overflow: hidden;
+        background-color: rgb(6, 105, 51);
+        font-weight: bolder;
+
+        top: 1;
+      }
+
+      .nav-item {
+        display: inline-flex;
+        justify-content: right;
+        width: 20%;
+        background-color: rgb(6, 105, 51);
+        background-size: 90%;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: rgb(252, 252, 252);
+        background-color: rgb(6, 105, 51);
+        border: 30px;
+        border-color: aliceblue;
+      }
+
+      .nav-item a:hover {
+        background-color: rgb(103, 216, 75);
+      }
+
+      body {
+        background-color: rgb(11, 105, 77);
+        padding: 100px, 30px, 50px, 20px;
+        margin: auto;
+      }
+      main {
+        width: 35%;
+        height: 40%;
+        margin: auto;
+        margin-top: 7em;
+        margin-bottom: 1em;
+        background-color: rgb(253, 255, 254);
+        border-radius: 50px;
+      }
+      .Login {
+        font-size: larger;
+        font-weight: 200;
+        text-align: justify;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: rgb(10, 9, 9);
+        display: block;
+        justify-content: center;
+        margin-block: 100px;
+      }
+      input {
+        padding: 1em;
+        width: 80%;
+        border: auto;
+        margin: auto;
+        border-radius: 30px;
+      }
+      .legend {
+        text-align: justify;
+        font-size: xx-large;
+        font-style: normal;
+        position: relative;
+        left: 170px;
+      }
+      #Email {
+        position: relative;
+        left: 50px;
+        bottom: 55px;
+      }
+      #Password {
+        position: relative;
+        left: 90px;
+        bottom: 55px;
+        width: 70%;
+      }
+      .submit {
+        width: 30%;
+        padding: 1em;
+        border: auto;
+        margin: auto;
+        position: relative;
+        bottom: 90px;
+        left: 170px;
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+      }
+      .newuser {
+        font-weight: 500;
+        font-size: large;
+        font-style: oblique;
+        font-weight: bold;
+        color: rgb(134, 29, 29);
+        position: relative;
+        bottom: 170px;
+      }
+      .here {
+        text-decoration: none;
+        color: aquamarine;
+      }
+      footer {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: rgb(6, 87, 49);
+        position: relative;
+        text-align: center;
+        font-family: Franklin Gothic Medium;
+        margin: auto;
+        margin-top: 5em;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <header>
+    <nav>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" rel="noopener" target="_self"
+            >HOME</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="registration.html"
+            rel="noopener"
+            target="_blank"
+            >REGISTRATION</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" rel="noopener" target="_self"
+            >LOG IN</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="contactme.html"
+            rel="noopener"
+            target="_blank"
+            >CONTACT ME</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <form class="Login">
+        <legend class="legend">LOG IN</legend>
+        <br />
+        <label for="Email">Email:</label><br /><br />
+        <input type="email" id="Email" name="Email" value="" required /><br />
+        <label for="Password">Password:</label><br /><br />
+        <input
+          type="password"
+          id="Password"
+          name="Password"
+          value=""
+          required
+        /><br /><br /><br />
+        <input class="submit" type="submit" value="Sign In" />
+      </form>
+      <p class="newuser">
+        Not Registered? Register
+        <a href="registration.html" target="_self" rel="noopener" class="here"
+          >Here</a
+        >
+      </p>
+    </main>
+  </body>
+  <footer>
+    <p>This page was created and is managed by TONIE learning with I4GxZURI</p>
+  </footer>
+</html>

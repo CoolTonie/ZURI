@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,37 +11,40 @@ body {
 
 main {
   width: 800px;
-  margin: 0 auto;
+  margin: 20px auto;
   display: grid;
   grid-template-areas:
     "g g g gr "
     "bl bl r r"
     "bl bl br br";
-  gap: 5px;
-  padding-top: 25px;
-}
+  gap: 10px;
+  padding:20px 20px;
+  background-color: rgb(26, 25, 25);
+  border-radius: 30px;
+ }
 
 main div {
   padding: 70px;
+  border-radius: 15px;
 }
 .gold {
-  background-color: gold;
+  background-color: rgb(184, 166, 68);
   grid-area: g;
 }
 .green {
-  background-color: green;
+  background-color: rgb(45, 128, 45);
   grid-area: gr;
 }
 .blue {
-  background-color: blue;
+  background-color: rgb(40, 40, 134);
   grid-area: bl;
 }
 .red {
-  background-color: red;
+  background-color: rgb(107, 17, 17);
   grid-area: r;
 }
 .brown {
-  background-color: brown;
+  background-color: rgb(107, 17, 17);
   grid-area: br;
 }
 header {
@@ -48,8 +52,42 @@ header {
   text-decoration: none;
   background-color: orangered;
   color: antiquewhite;
-  font-weight: 800;
-  width: 100px;
-  margin: auto;
+  font-weight: bolder;
+  width: 250px;
+  margin: 20px auto;
   border-radius: 5px;
+}
+
+@media screen and (max-width:1440px) {
+  main {
+    width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-areas:
+      "g g g gr "
+      "bl bl r r"
+      "bl bl br br";
+    gap: 10px;
+    padding:20px 20px;
+    background-color: rgb(26, 25, 25);
+    border-radius: 30px;
+   }
+}
+
+@media screen and (max-width:700px) {
+  main {
+    width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-areas:
+      "g"
+      "gr "
+      "bl"
+      "r"
+      "br";
+    gap: 10px;
+    padding:20px 20px;
+    background-color: rgb(182, 174, 174);
+    border-radius: 30px;
+   }
 }

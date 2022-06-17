@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TONIES WEBPAGE-CONTACT ME</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-color: rgb(12, 11, 11);
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 5px;
+        padding-left: 50px;
+        padding-right: 70px;
+        background-color: rgb(223, 184, 14);
+      }
+
+      .logo {
+        color: rgb(253, 250, 247);
+        font-size: 40px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-weight: bolder;
+        background-color: rgb(121, 104, 8);
+        border-radius: 10px;
+        border-color: aliceblue;
+        border: 1px;
+        text-decoration: none;
+      }
+
+      span {
+        color: rgb(197, 178, 10);
+      }
+
+      nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 25px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      nav ul li a:hover {
+        background-color: rgb(216, 186, 51);
+        transition: 0.5s;
+        border-radius: 5px;
+      }
+      .active {
+        background-color: #a09d10;
+      }
+
+      input {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 30px;
+      }
+
+      input[type="submit"] {
+        background-color: #dad60b;
+        color: white;
+        padding: 12px 10px;
+        border-radius: 30px;
+        cursor: pointer;
+        width: 100px;
+        font-weight: bold;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0a0a0a;
+      }
+      h2 {
+        color: aliceblue;
+        text-align: center;
+      }
+      div {
+        color: aliceblue;
+
+        font-size: large;
+        font-weight: bold;
+      }
+      footer {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+      }
+      .container {
+        border-radius: 30px;
+        background-color: rgb(197, 178, 10);
+        padding: 10px;
+        padding-top: 5px;
+        width: 50%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <header>
+    <nav>
+      <h2>
+        <a href="index.html" target="_self" class="logo">N/<span>A</span></a>
+      </h2>
+
+      <ul>
+        <li><a href="index.html" target="_self">HOME</a></li>
+        <li><a href="registration.html" target="_self">REGISTRATION</a></li>
+        <li><a href="login.html" target="_self">LOG IN</a></li>
+        <li>
+          <a class="active" href="contactme.html" target="_self">CONTACT ME</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <h2>LET'S GET IN TOUCH</h2>
+    <div class="form">
+      <br />
+      <div class="container">
+        <form>
+          <label for="Name">Name:</label><br />
+          <input
+            type="text"
+            id="Name"
+            name="Name"
+            value=""
+            required
+          /><br /><br />
+          <label for="Email">Email:</label><br />
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            value=""
+            required
+          /><br /><br />
+          <label for="Message">Message:</label><br />
+          <input
+            type="text"
+            id="Message"
+            name="Message"
+            placeholder="Write something.."
+            style="height: 200px"
+            value=""
+            required
+          /><br /><br /><br />
+          <input class="submit" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <span
+      ><p>
+        This page was created and is managed by TONIE learning with I4GxZURI
+      </p></span
+    >
+  </footer>
+</html>
