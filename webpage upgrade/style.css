@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    }
+.nav-col{
+    background-color: rgb(33, 36, 36);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+    margin:auto;
+    }
+
+.nav-items ul{
+    display: flex;
+    
+}
+
+.nav-items li{
+    list-style-type: none;
+    padding: 10px;
+    
+}
+
+.nav-items li a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: larger;
+    font-weight: 500;
+    background-color: darkslategray;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.navbar p{
+    text-transform: capitalize;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(247, 252, 252);
+}
+
+.navbar span{
+    color: rgb(122, 201, 201);
+}
+
+.welcome img{
+    width: 250px;
+    height: 250px;
+    border-radius: 120px;
+    object-fit: cover;
+    margin: 50px 250px;
+}
+
+.tech img{
+    width: 60%;
+    margin:auto;
+margin: auto 250px;
+
+    
+    
+    
+}
+
+video{
+    width: 600px;
+    height: 300px;
+}
+
+.welcome{
+text-align: center;
+    margin: 100px auto;
+    color: antiquewhite;
+}
+
+.services{
+width: 80%;
+margin: 20px auto;
+color: antiquewhite;
+
+}
+.services .para{
+    text-align: justify;
+    display: flex;
+    gap: 20px;
+}
+
+footer{
+    text-align: center;
+    margin: 30px auto;
+    color: antiquewhite;
+
+}
